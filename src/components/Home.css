@@ -1,0 +1,102 @@
+figcaption {
+  position: absolute;
+  bottom: 2rem;
+  left: 4rem;
+  color: white;
+  text-align: left;
+  background-image: linear-gradient(to right, #1cbddd, #4dca79);
+  max-width: 600px;
+}
+
+@media screen and (max-width: 768px) {
+  figcaption {
+    position: inherit;
+    margin: 0.25rem 0px;
+    max-width: inherit;
+    width: 100%;
+    left: inherit;
+  }
+  figcaption h1 {
+    font-size: 48px;
+  }
+  figcaption button {
+    margin-left: 2rem;
+  }
+}
+
+figcaption h1 {
+  font-size: 48px;
+  margin-left: 2rem;
+}
+figcaption button {
+  margin-left: 2rem;
+}
+
+figcaption button:hover {
+  border-color: #f28d35;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: #f28d35;
+}
+
+.text-col {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .text-col {
+    text-align: center;
+    align-items: center;
+  }
+}
+
+.reverse-row {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.text-heading {
+  color: #6b3cc9;
+}
+
+.text-content {
+  max-width: 500px;
+}
+
+button {
+  background-color: #f28d35;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+}
+
+.text-col button:hover {
+  border-color: #f28d35;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  color: #f28d35;
+}
+
+/* .cover-image {
+  width: 100%;
+  height: 700;
+  height: auto;
+  object-fit: cover;
+} */
+
+
+
+
+
+
+
+
+
+
+
