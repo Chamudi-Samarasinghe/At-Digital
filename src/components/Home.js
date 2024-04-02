@@ -13,16 +13,13 @@ function Home() {
       <figure className="position-relative">
         <img
           src={cover}
-          alt="cover"
-          // className="img-fluid cover-image"
           className="img-fluid"
-          width="100%"
-          style={{ height: 700, objectFit: "cover" }}
+          alt="cover"
+          style={{ height: "auto", width: "100%", maxHeight: "90vh", objectFit: "cover"}}
         />
         <figcaption>
           <h1>
-            We crushe your competitors, goals, and sales records - without the
-            B.S.
+          We Crush Your Competitors, Goals, And Sales Records - Without The B.S.
           </h1>
           <br />
           <button>GET FREE CONSULTASTION</button>
@@ -41,10 +38,10 @@ function Home() {
               <h3 className="text-heading">Web & Mobile App Development</h3>
               <br />
               <p className="text-content">
-                Your web and mobile Apps are pieces of the puzzle to grow your
-                business. We use frameworks which tailor content and engagement
-                methods to respond to different intents shown by your potential
-                customers who interact with your business online.
+              Your web and mobile Apps are pieces of the puzzle to grow your business. 
+              We use frameworks which tailor content and engagement methods to respond 
+              to different intents shown by your potential customers who interact with 
+              your business online.
               </p>
               <button className="home button">LEARN MORE</button>
             </div>

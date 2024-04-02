@@ -14,15 +14,15 @@ function NavigationBar() {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav className="nav-text">
-            <Nav.Link eventKey={1}>Services</Nav.Link>
-            <Nav.Link eventKey={2} href="#">
-              About Us
+            <Nav.Link eventKey={1}  >SERVICES</Nav.Link>
+            <Nav.Link eventKey={2} href="#" >
+              ABOUTUS
             </Nav.Link>
             <Nav.Link eventKey={3} href="#">
-              Contact Us
+              CONTACTUS
             </Nav.Link>
             <Nav.Link eventKey={4} href="#">
-              Careers
+              CAREERS
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
