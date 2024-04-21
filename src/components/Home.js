@@ -7,7 +7,26 @@ import image1 from "../components/images/1.png";
 import image2 from "../components/images/2.png";
 import "./Home.css";
 
+var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+          } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+      });
+  }
+
+
 function Home() {
+
+  
+
   return (
     <div>
       <figure className="position-relative">
@@ -68,10 +87,63 @@ function Home() {
           </Col>
         </Row>
         <br />
+        <br />
+        <br />
+        
+        <Row className="reverse-row" id="123" style={{ display: 'flex', justifyContent: 'center',  }} >
+
+          <Col xs={12} md={8} className="text-col"  >
+            <div >
+              <h3 className="text-heading" style={{ textAlign:"center", fontSize:"27px" }}>Frequently asked questions</h3>
+              <br />
+
+          <div className="faq-box">
+              <button class="accordion">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</button>
+              <div class="panel">
+                 <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. 
+                  Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+                 </p>
+                 </div>
+          </div>
+
+
+          <div className="faq-box">
+              <button class="accordion">Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?</button>
+              <div class="panel">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
+                repellat magni!</p>
+              </div>
+          </div>
+
+              
+          <div className="faq-box">
+              <button class="accordion">Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?</button>
+              <div class="panel">
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
+                 repellat magni!</p>
+              </div>
+          </div>
+
+          
+          </div>
+
+          
+          </Col>
+          
+        </Row>
+       
+        <br />
+        
       </Container>
+      
     </div>
+
+    
   );
+  
 }
+
+
 
 export default Home;
 

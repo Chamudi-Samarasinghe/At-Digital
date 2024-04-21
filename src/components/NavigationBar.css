@@ -1,10 +1,22 @@
 
+
 .nav-color {
   background-color: #6b3cc9;
   
 }
 .nav-text a {
   color: white !important;
+
+}
+
+
+.nav-text a:hover {
+  background-color: transparent; 
+}
+
+
+.nav-text a.active {
+  background-color: transparent; 
 }
 
 .head-logo {
@@ -19,9 +31,7 @@
   max-width: 100%;
 }
 
-.nav-text a {
-  color: white !important;
-}
+
 
 .head-logo {
   height: 40px;
@@ -38,6 +48,7 @@
     text-align: center; 
     width: 100%; 
     font-size: 17px; 
+    
   }
   .head-logo {
     height: 30px; 
@@ -56,6 +67,3 @@
   }
 
 }
-
-
-

@@ -85,6 +85,116 @@ button {
   color: #f28d35;
 }
 
+/* faq */
+ .accordion {
+        background-color: #FAF8FF;
+        color: black;
+        font-size: 22px;
+        font-weight: 500; 
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+    }
+
+    
+    .active,
+    .accordion:hover {
+ 
+        color: #6B3CC9;
+
+    }
+
+
+    
+    .accordion:after {
+        content: '\002B';
+        /* color: #777; */
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
+    
+    .active:after {
+        content: "\2212";
+    }
+
+    .faq-box{
+      background-color: #FAF8FF;
+      cursor: pointer;
+      margin: 10px 0;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      border-radius: 7px;
+      transition: 0.4s;
+    }
+
+    .active,
+    .faq-box:hover{
+      background-color: #FAF8FF;
+    }
+
+    .faq-box:after{
+      background-color: #FAF8FF;
+      
+    }
+    
+    .faq-box button:hover{
+      background-color: #FAF8FF;
+      color: #6B3CC9;
+    }
+    .panel {
+       font-size: 18px;
+        padding: 0 18px;
+        color: #6F6C90;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+    }
+
+
+    @media screen and (max-width: 1440px) {
+
+
+
+      
+      .reverse-row1{
+        width: 846px;
+        height: 392px;
+      }
+    
+      .accordion {
+        font-size: 20px;
+      }
+      .pannel{
+        font-size: 16px;
+      }
+  } 
+
+
+    @media screen and (min-width: 425px) {
+
+
+
+      
+        .reverse-row1{
+          width: 847px;
+          height: 392px;
+        }
+      
+        .accordion {
+          font-size: 20px;
+        }
+        .pannel{
+          font-size: 16px;
+        }
+    }  
+
+
 
 
 
