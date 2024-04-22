@@ -7,16 +7,23 @@ figcaption {
   background-image: linear-gradient(to right, #4dca79, #1cbddd);
   max-width: 600px;
   flex-wrap: wrap;
+  background-size: cover;
+
+  
 }
 
 @media screen and (max-width: 768px) {
   figcaption {
     position: inherit;
+    background-position: top center;
     margin: 0.25rem 0px;
     max-width: inherit;
     width: 100%;
     left: inherit;
   }
+
+
+
   figcaption h1 {
     font-size: 48px;
   }

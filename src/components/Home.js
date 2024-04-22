@@ -2,8 +2,6 @@ import { Container } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import React, { useState } from 'react';
-
-
 import cover from "../components/images/cover.jpg";
 import image1 from "../components/images/1.png";
 import image2 from "../components/images/2.png";
@@ -26,7 +24,7 @@ function Home() {
           src={cover}
           className="img-fluid"
           alt="cover"
-          style={{ height: "auto", width: "100%", maxHeight: "90vh", objectFit: "cover"}}
+          style={{ height: "auto", width: "100%", maxHeight: "90vh", objectFit: "cover", display: "block"}}
         />
         <figcaption>
           <h1>
