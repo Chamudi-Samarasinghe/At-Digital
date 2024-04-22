@@ -1,31 +1,37 @@
 import { Container } from "react-bootstrap";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
+import React, { useState } from 'react';
+
 
 import cover from "../components/images/cover.jpg";
 import image1 from "../components/images/1.png";
 import image2 from "../components/images/2.png";
 import "./Home.css";
 
-var acc = document.getElementsByClassName("accordion");
-  var i;
+// var acc = document.getElementsByClassName("accordion");
+//   var i;
   
-  for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.maxHeight) {
-              panel.style.maxHeight = null;
-          } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-          }
-      });
-  }
+//   for (i = 0; i < acc.length; i++) {
+//       acc[i].addEventListener("click", function () {
+//           this.classList.toggle("active");
+//           var panel = this.nextElementSibling;
+//           if (panel.style.maxHeight) {
+//               panel.style.maxHeight = null;
+//           } else {
+//               panel.style.maxHeight = panel.scrollHeight + "px";
+//           }
+//       });
+//   }
 
 
 function Home() {
 
-  
+  const [activeIndex, setActiveIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
 
   return (
     <div>
@@ -97,32 +103,43 @@ function Home() {
               <h3 className="text-heading" style={{ textAlign:"center", fontSize:"27px" }}>Frequently asked questions</h3>
               <br />
 
-          <div className="faq-box">
-              <button class="accordion">Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?</button>
-              <div class="panel">
-                 <p>Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. 
-                  Elementum ultrices nulla faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
-                 </p>
-                 </div>
-          </div>
-
-
-          <div className="faq-box">
-              <button class="accordion">Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?</button>
-              <div class="panel">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
-                repellat magni!</p>
+              <div className="faq-box">
+                <button className={`accordion ${activeIndex === 1 ? 'active' : ''}`} onClick={() => toggleAccordion(1)}>
+                  Lorem ipsum dolor sit amet consectetur. Leo at sit eu libero?
+                </button>
+                <div className={`panel ${activeIndex === 1 ? 'show' : ''}`}>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Faucibus commodo suscipit id ipsum. Elementum ultrices nulla
+                    faucibus odio est sed aliquam. Sapien massa morbi risus sagittis tortor integer.
+                  </p>
+                </div>
               </div>
-          </div>
+
+
+              <div className="faq-box">
+                  <button className={`accordion ${activeIndex === 2 ? 'active' : ''}`} onClick={() => toggleAccordion(2)}>
+                   Lorem ipsum dolor sit amet consectetur. Tortor scelerisque integer?
+                  </button>
+             <div className={`panel ${activeIndex === 2 ? 'show' : ''}`}>
+               <p>
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
+                   repellat magni!
+                 </p>
+             </div>
+            </div>
 
               
-          <div className="faq-box">
-              <button class="accordion">Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?</button>
-              <div class="panel">
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
-                 repellat magni!</p>
-              </div>
-          </div>
+            <div className="faq-box">
+               <button className={`accordion ${activeIndex === 3 ? 'active' : ''}`} onClick={() => toggleAccordion(3)}>
+                  Lorem ipsum dolor sit amet consectetur. Faucibus scelerisque nunc?
+               </button>
+               <div className={`panel ${activeIndex === 3 ? 'show' : ''}`}>
+                <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates adipisci deserunt asperiores delectus
+                 repellat magni!
+                  </p>
+               </div>
+            </div>
 
           
           </div>

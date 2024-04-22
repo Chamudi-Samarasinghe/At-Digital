@@ -156,6 +156,10 @@ button {
         transition: max-height 0.2s ease-out;
     }
 
+    .panel.show {
+      max-height: 200px; /* Adjust the maximum height as needed */
+    }
+
 
     @media screen and (max-width: 1440px) {
 
