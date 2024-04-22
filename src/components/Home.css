@@ -90,6 +90,7 @@ button {
         background-color: #FAF8FF;
         color: black;
         font-size: 22px;
+        /* font-family: Inter; */
         font-weight: 500; 
         cursor: pointer;
         width: 100%;
@@ -97,6 +98,8 @@ button {
         text-align: left;
         outline: none;
         transition: 0.4s;
+        position: relative;
+
     }
 
     
@@ -111,10 +114,13 @@ button {
     
     .accordion:after {
         content: '\002B';
-        /* color: #777; */
         font-weight: bold;
         float: right;
         margin-left: 5px;
+        position: absolute; 
+        right: 20px;
+        top: 50%; 
+        transform: translateY(-50%); 
     }
     
     .active:after {
@@ -148,7 +154,7 @@ button {
       color: #6B3CC9;
     }
     .panel {
-       font-size: 18px;
+        font-size: 18px;
         padding: 0 18px;
         color: #6F6C90;
         max-height: 0;
@@ -161,42 +167,70 @@ button {
     }
 
 
-    @media screen and (max-width: 1440px) {
 
 
 
-      
-      .reverse-row1{
-        width: 846px;
-        height: 392px;
-      }
-    
-      .accordion {
-        font-size: 20px;
-      }
-      .pannel{
-        font-size: 16px;
-      }
-  } 
+/* Styles for FAQ section with max-width: 1440px */
+@media screen and (max-width: 1440px) {
+  #123 .faq-box {
+    width: 846px; /* Set width */
+    height: 392px; /* Set height */
+    top: 1847px; /* Set top position */
+    left: 297px; /* Set left position */
+    gap: 28px; /* Set gap */
+    opacity: 0; /* Set opacity */
+  }
+}
+
+/* Styles for FAQ section with max-width: 375px */
+@media screen and (max-width: 375px) {
+  #123 .faq-box {
+    width: 334px; /* Set width */
+    height: 769px; /* Set height */
+    top: 1915px; /* Set top position */
+    left: 20px; /* Set left position */
+    gap: 28px; /* Set gap */
+    opacity: 0; /* Set opacity */
+  }
+}
+
+/* Styles for Frequently asked questions part with max-width: 1440px */
+@media screen and (max-width: 1440px) {
+  #123 .text-heading {
+    width: 389px; /* Set width */
+    height: 33px; /* Set height */
+    gap: 0px; /* Set gap */
+    opacity: 0; /* Set opacity */
+    font-family: 'Poppins'; /* Set font-family */
+    font-size: 27px; /* Set font-size */
+    font-weight: 600; /* Set font-weight */
+    line-height: 33px; /* Set line-height */
+    letter-spacing: 0.4px; /* Set letter-spacing */
+    text-align: left; /* Set text-align */
+  }
+}
+
+/* Styles for Frequently asked questions part with max-width: 375px */
+@media screen and (max-width: 375px) {
+  #123 .text-heading {
+    width: 334px; /* Set width */
+    height: 66px; /* Set height */
+    gap: 0px; /* Set gap */
+    opacity: 0; /* Set opacity */
+    font-family: 'Poppins'; /* Set font-family */
+    font-size: 27px; /* Set font-size */
+    font-weight: 600; /* Set font-weight */
+    line-height: 33px; /* Set line-height */
+    letter-spacing: 0.4px; /* Set letter-spacing */
+    text-align: center; /* Set text-align */
+  }
+}
 
 
-    @media screen and (min-width: 425px) {
 
 
 
-      
-        .reverse-row1{
-          width: 847px;
-          height: 392px;
-        }
-      
-        .accordion {
-          font-size: 20px;
-        }
-        .pannel{
-          font-size: 16px;
-        }
-    }  
+
 
 
 
