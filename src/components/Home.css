@@ -163,7 +163,7 @@ button {
     }
 
     .panel.show {
-      max-height: 200px; /* Adjust the maximum height as needed */
+      max-height: 200px; 
     }
 
 
@@ -173,58 +173,70 @@ button {
 /* Styles for FAQ section with max-width: 1440px */
 @media screen and (max-width: 1440px) {
   #123 .faq-box {
-    width: 846px; /* Set width */
-    height: 392px; /* Set height */
-    top: 1847px; /* Set top position */
-    left: 297px; /* Set left position */
-    gap: 28px; /* Set gap */
-    opacity: 0; /* Set opacity */
+    width: 846px; 
+    height: 392px; 
+    top: 1847px; 
+    left: 297px; 
+    gap: 28px; 
+    opacity: 0; 
   }
 }
 
 /* Styles for FAQ section with max-width: 375px */
 @media screen and (max-width: 375px) {
   #123 .faq-box {
-    width: 334px; /* Set width */
-    height: 769px; /* Set height */
-    top: 1915px; /* Set top position */
-    left: 20px; /* Set left position */
-    gap: 28px; /* Set gap */
-    opacity: 0; /* Set opacity */
+    width: 334px; 
+    height: 769px; 
+    top: 1915px; 
+    left: 20px; 
+    gap: 28px; 
+    opacity: 0; 
   }
 }
 
 /* Styles for Frequently asked questions part with max-width: 1440px */
 @media screen and (max-width: 1440px) {
   #123 .text-heading {
-    width: 389px; /* Set width */
-    height: 33px; /* Set height */
-    gap: 0px; /* Set gap */
-    opacity: 0; /* Set opacity */
-    font-family: 'Poppins'; /* Set font-family */
-    font-size: 27px; /* Set font-size */
-    font-weight: 600; /* Set font-weight */
-    line-height: 33px; /* Set line-height */
-    letter-spacing: 0.4px; /* Set letter-spacing */
-    text-align: left; /* Set text-align */
+    width: 389px; 
+    height: 33px; 
+    gap: 0px; 
+    opacity: 0; 
+    font-family: 'Poppins';
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 33px; 
+    letter-spacing: 0.4px;
+    text-align: left; 
   }
 }
 
 /* Styles for Frequently asked questions part with max-width: 375px */
 @media screen and (max-width: 375px) {
   #123 .text-heading {
-    width: 334px; /* Set width */
-    height: 66px; /* Set height */
-    gap: 0px; /* Set gap */
-    opacity: 0; /* Set opacity */
-    font-family: 'Poppins'; /* Set font-family */
-    font-size: 27px; /* Set font-size */
-    font-weight: 600; /* Set font-weight */
-    line-height: 33px; /* Set line-height */
-    letter-spacing: 0.4px; /* Set letter-spacing */
-    text-align: center; /* Set text-align */
+    width: 334px; 
+    height: 66px; 
+    gap: 0px; 
+    opacity: 0; 
+    font-family: 'Poppins'; 
+    font-size: 27px; 
+    font-weight: 600; 
+    line-height: 33px; 
+    letter-spacing: 0.4px; 
+    text-align: center; 
   }
 }
+
+@media screen and (max-width: 1440px) {
+  #123 .p {
+    font-size: 22px;
+  }
+
+  @media screen and (max-width: 375px) {
+    font-size: 20px;
+  }
+
+}
+
 
 
 
